@@ -1,0 +1,282 @@
+/* @font-face {
+font-family: 'Fredericka the Great';
+src: url(../sources/fonts/FrederickatheGreat-Regular.ttf) format('truetype');
+} */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@font-face {
+font-family: 'gabelisa';
+src: url(../sources/fonts/Gabelisa.otf) format('opentype');
+}
+@font-face {
+font-family: 'montserrat';
+src: url(../sources/fonts/Montserrat-Bold.ttf) format('truetype');
+}
+@font-face {
+font-family: 'montserrat regular';
+src: url(../sources/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+/* CONFIG GENERAL */
+  body {overflow-x: hidden;}
+  * {margin: 0; padding: 0;}
+  p {font-family: 'montserrat regular'; font-weight: lighter;; font-size: 1.2vw;}
+  h2 {font-family: 'Fredericka the Great'; font-size: 3.4vw; padding: 0; font-weight: normal;}
+  strong {font-family: 'montserrat'; font-size: 1.6vw;}
+  .clear {clear: both;}
+
+@media (max-width:600px)
+{
+  p {font-size: 4vw;}
+  h2 {font-size: 10vw;}
+  strong {font-size: 4vw;}
+}
+/* FIN CONFIG GENERAL */
+
+/* HEADER SITIO */
+  #header_principal {position: fixed; height:5.5vw; z-index: 100; width: 100%; background:rgba(255,224,1,0);  transition: 0.5s ease-in-out;}
+  #header_principal .logo {width:17vw; top:3vw; left:4vw; position: relative; transition: 0.5s ease-in-out;}
+  #header_principal .logo img {width:100%;}
+  #header_principal .telefono {position: absolute; top:2vw; right:4vw; width: 24vw;}
+  #header_principal .telefono span {font-family: 'montserrat'; display: block; text-align: right;}
+  #header_principal .telefono span:nth-child(2) {font-size: 1vw;}
+  #header_principal .telefono span:nth-child(3) {font-size: 1.6vw;}
+  #header_principal .telefono i {float: right; margin-left: 0.6vw;}
+  #header_principal .telefono i svg{width: 3vw;}
+  #header_principal .telefono i svg path{fill:#000;}
+  #nav_principal {position: absolute; top:6vw; right:3vw; transition: 0.5s ease-in-out;}
+  #nav_principal ul {}
+  #nav_principal ul li {list-style: none; margin: 0 2vw; display: inline-block; font-family: 'montserrat'; font-size: 1.2vw;}
+
+@media (max-width:600px)
+{
+  #header_principal {position: fixed; height:5.5vw; z-index: 100; width: 100%; background:rgba(255,224,1,0);  transition: 0.5s ease-in-out;}
+  #header_principal .logo {width:30vw; }
+  #header_principal .telefono {display:none}
+  #nav_principal {display:none;}
+}
+
+/* FIN HEADER SITIO */
+
+
+
+/* HEADER HOME */
+  #headerHome {background-image: linear-gradient(to bottom,#ebe9ac,#e6e4a8); opacity:0; height: 46vw; width:100%; position: relative;}
+  #headerHome .cuadroFondo {clip-path: polygon(0% 0%, 75% 0%, 65% 100%, 0% 100%); width: 0%; height: 100%; background: #ffe001; position: relative;}
+  #headerHome .plato_uno {display: none; position: absolute; top:0; right:0; width: 56vw; margin-top: 0vw; margin-right: -2vw;}
+  #headerHome .pasta {position: absolute; top:-9vw; left:46vw; width: 6vw; animation-fill-mode: forwards; animation-name: pasta; animation-delay:1.3s; animation-timing-function:ease-in-out;  animation-duration: 1s;}
+  #headerHome .hoja_uno {position: absolute; top:-11vw; left:8vw; width: 3.4vw; animation-fill-mode: forwards; animation-name: hoja_uno; animation-delay:1.7s; animation-timing-function:ease-in-out;  animation-duration: 1s;}
+  #headerHome .hoja_dos {position: absolute; top:58vw; right:5vw; width: 4vw;  animation-fill-mode: forwards; animation-name: hoja_dos; animation-delay:1.1s; animation-timing-function:ease-in-out;  animation-duration: 1s;}
+  #headerHome .tomate {position: absolute; opacity: 0; top:50vw; left:50vw; width: 6vw; animation-fill-mode: forwards; animation-name: tomate; animation-delay:1.5s; animation-timing-function:ease-in-out;  animation-duration: 1s; }
+  #headerHome .spaguetti {position: absolute; top:28vw; left:0; width: 36vw; margin-left: -20vw;}
+  #headerHome  img {width:100%;}
+  #headerHome  .textos {display: none; position: absolute; text-align: center; top:14vw; left:6vw;}
+  #headerHome  .textos h1 {font-family: 'gabelisa'; font-size: 3vw; padding: 0; font-weight: normal;}
+  #headerHome  .textos h2 {font-family: 'Fredericka the Great'; font-size: 7vw; padding: 0; font-weight: normal;}
+  #headerHome  .textos h3 {font-family: 'montserrat'; font-size: 1.6vw; padding: 0; font-weight: bold;}
+  #headerHome  .textos .linea {border-bottom:2px solid rgba(0,0,0,0.3); width: 65%; margin: 2vw auto 2vw auto;}
+  #headerHome  .textos .promo span {display: inline-block; font-family: 'Fredericka the Great'; padding: 0; font-weight: normal;}
+  #headerHome  .textos .promo span:nth-child(1) { font-size: 1.4vw; margin-right: 0.5vw;}
+  #headerHome  .textos .promo span:nth-child(2) { font-size: 4vw; margin-left: 0.5vw;}
+  #headerHome  .textos button {background-color: #ffe001; border: 1px solid #000; font-family: 'montserrat'; font-size: 1.6vw; padding: 1vw 2vw; margin: 2vw 0 0 0; transition: 0.5s ease-in-out; cursor: pointer;}
+  #headerHome  .textos button:hover {background-color: #000; border: 1px solid #000; color: #ffe001;}
+
+@media (max-width:600px)
+{
+  #headerHome {opacity:0; height: 180vw;}
+  #headerHome .cuadroFondo {clip-path: polygon(0% 0%, 75% 0%, 50% 100%, 0% 100%); width: 0%; height: 100%; background: #ffe001; position: relative;}
+  #headerHome .plato_uno {top:86vw;  width: 100vw;  margin-right: 0vw;}
+  #headerHome .pasta { top:auto; left:auto; width: 10vw;}
+  #headerHome .hoja_uno {top:16vw; left:-11vw; width: 6vw;}
+  #headerHome .hoja_dos {right:10vw; width: 7vw;}
+  #headerHome .tomate { top:100vw;  width: 10vw;}
+  #headerHome .spaguetti {bottom:-26vw; top:auto; width: 60vw; margin-left: -34vw;}
+  #headerHome  img {width:100%;}
+  #headerHome  .textos {top:24vw; left:10vw;}
+  #headerHome  .textos h1 {font-size: 7vw;}
+  #headerHome  .textos h2 {font-size: 13vw;}
+  #headerHome  .textos h3 {font-size: 4vw;}
+  #headerHome  .textos .linea {border-bottom:2px solid rgba(0,0,0,0.3); width: 65%; margin: 4vw auto 4vw auto;}
+  #headerHome  .textos .promo span:nth-child(1) { font-size: 3vw; margin-right: 0.5vw;}
+  #headerHome  .textos .promo span:nth-child(2) { font-size: 9vw; margin-left: 0.5vw;}
+  #headerHome  .textos button {background: none; font-size: 4vw; padding: 3vw 10vw; margin: 6vw 0 0 0;}
+}
+
+/* FIN HEADER HOME */
+
+/* ANIMACION HEADER */
+  @keyframes hoja_uno{0% {top:-11vw} 55%{top:13vw} 100%{top:11vw}}
+  @keyframes pasta{0% {top:-9vw} 55%{top:11vw} 100%{top:9vw}}
+  @keyframes tomate{0% {top:50vw; opacity: 0;} 55%{top:35vw; opacity:1;} 100%{top:37vw; opacity: 1;}}
+  @keyframes hoja_dos{0% {top:58vw} 55%{top:36vw} 100%{top:38vw}}
+
+@media (max-width:600px)
+{
+  @keyframes hoja_uno{0% {left:-11vw} 55%{left:16vw} 100%{left:14vw}}
+  @keyframes pasta{0% {top:70vw; right:-10vw} 55%{top:84vw; right:15vw;} 100%{top:80vw; right:12vw;}}
+  @keyframes tomate{0% {left:-20vw; opacity: 0;} 55%{left:14vw; opacity:1;} 100%{left:10vw; opacity: 1;}}
+  @keyframes hoja_dos{0% {top:190vw;  opacity: 0;} 55%{top:157vw;  opacity: 1;} 100%{top:160vw;  opacity: 1;}}
+}
+/* FIN ANIMACION HEADER */
+
+
+/* PRODUCTOS DESTACADOS */
+  #productos_destacados {text-align: center; width: 100%; margin: 2vw auto 10vw auto; position: relative; z-index: 10;}
+  #productos_destacados p {padding: 0 10vw 3vw 10vw;}
+  #productos_destacados h2 {padding: 5vw 0 1.6vw 0;}
+  #productos_destacados .productos {}
+  #productos_destacados .fondo {background-color: #e8e6a9; width:100%; position: absolute; z-index: 0; height: 10vw; top:25vw;}
+  .modulo_producto_uno {width:28vw; position: relative; margin: 0 2vw; text-align: center; display: inline-block;}
+  .modulo_producto_uno .imagen {width: 100%; position: relative;}
+  .modulo_producto_uno .imagen img {width: 100%;}
+  .modulo_producto_uno h3 {font-family: 'montserrat'; font-size: 1.6vw; padding: 0 0 1vw 0; margin-top: -1vw;}
+  #productos_destacados .modulo_producto_uno p {padding: 0;}
+  .modulo_producto_uno button {background-color: #ffe001; border: 1px solid #ffe001; font-family: 'montserrat'; font-size: 1.2vw; padding: 1vw 2vw; margin: 2vw 0 0 0; transition: 0.5s ease-in-out; cursor: pointer;}
+  .modulo_producto_uno button:hover {background-color: #000; border: 1px solid #000; color: #ffe001;}
+  .modulo_producto_uno {top:10vw}
+
+@media (max-width:600px)
+{
+  #productos_destacados {text-align: center; width: 100%; margin: 10vw auto 10vw auto; position: relative; z-index: 10;}
+  #productos_destacados p {padding: 0 10vw 10vw 10vw; text-align: justify;}
+  #productos_destacados h2 {padding: 10vw 0 10vw 0;}
+  #productos_destacados .productos {}
+  #productos_destacados .fondo {display: none;}
+  #productos_destacados .fondo_movil {background-color: #e8e6a9; width:100%; position: absolute; z-index: 0; height: 30vw; top:30vw;}
+
+  .modulo_producto_uno {width:100%; position: relative; margin: 0 0vw; text-align: center; display: inline-block;}
+  .modulo_producto_uno .imagen {width: 90%; text-align: center; margin-left: 8vw;}
+  .modulo_producto_uno .imagen img {width: 100%;}
+  .modulo_producto_uno h3 {font-size: 5vw; padding: 0 0 6vw 0; margin-top: -1vw;}
+  #productos_destacados .modulo_producto_uno p {padding: 0 10vw; text-align: center;}
+  .modulo_producto_uno button {font-size: 4vw; padding: 4vw 20vw; margin: 8vw 0 20vw 0;}
+  .modulo_producto_uno {top:0vw}
+}
+/* FIN PRODUCTOS DESTACADOS */
+
+/* SLIDER HOME */
+  #slider_home {text-align: center; position: relative; margin: 0 0 7vw 0;}
+  #slider_home p {padding: 2vw 10vw 3vw 10vw;}
+  #slider_home .slider {}
+  #slider_home .slider img {width: 100%;}
+  #slider_home .slider .imgAnt {position: absolute; top:17.5vw; left:0; width: 26vw; z-index: 0; cursor: pointer;}
+  #slider_home .slider .imgActual {margin: auto; width: 50vw; position: relative; z-index: 10; overflow: hidden; height: 29vw;box-shadow:1vw 1vw 4vw rgba(0,0,0,0.5), -0.3vw -0.3vw 2vw rgba(0,0,0,0.1);}
+  #slider_home .slider .imgSig {position: absolute; top:17.5vw; right:0; width: 26vw; z-index: 0; cursor: pointer;}
+  #slider_home .puntos {margin: 3vw 0 0 0;}
+  #slider_home .puntos i {display: inline-block; cursor: pointer; margin: 0 0.1vw;}
+  #slider_home .puntos i svg {width: 1.2vw;}
+  #slider_home .puntos i svg path {fill: #ccc; transition: 0.5s ease-in-out;}
+  #slider_home .puntos .select svg path {fill:#ffe001;}
+  #slider_home .puntos i:hover > svg path {fill:#ffe001;}
+
+
+@media (max-width:600px)
+{
+  #slider_home {margin: 0 0 0vw 0;}
+  #slider_home h2 {padding: 5vw 0 7vw 0;}
+  #slider_home p {padding: 7vw 10vw 13vw 10vw; text-align: justify;}
+  #slider_home .slider .imgAnt {display:none;}
+  #slider_home .slider .imgActual {margin: auto; width: 100%; position: relative; z-index: 10; overflow: hidden; height: 58vw;box-shadow:1vw 1vw 4vw rgba(0,0,0,0.5), -0.3vw -0.3vw 2vw rgba(0,0,0,0.1);}
+  #slider_home .slider .imgSig {display:none}
+  #slider_home .puntos {margin: 3vw 0 0 0;}
+  #slider_home .puntos i {display: inline-block; cursor: pointer; margin: 0 0.1vw;}
+  #slider_home .puntos i svg {width: 3vw;}
+  #slider_home .puntos i svg path {fill: #ccc; transition: 0.5s ease-in-out;}
+  #slider_home .puntos .select svg path {fill:#ffe001;}
+  #slider_home .puntos i:hover > svg path {fill:#ffe001;}
+}
+/* FIN SLIDER HOME */
+
+
+/* OFERTAS HOME */
+  #ofertas_home {width:82.6vw; margin: 0 auto 7vw auto;}
+  #ofertas_home .oferta_uno {float: left; left:-50vw; position: relative; width: 40vw;}
+  #ofertas_home .oferta_dos {float: right; left:50vw; position: relative; width: 40vw;}
+  #ofertas_home .oferta_tres {float: right; left:50vw; position: relative; width: 40vw; margin-top: 2vw;}
+  #ofertas_home .oferta_uno img {width:100%;}
+  #ofertas_home .oferta_dos img {width:100%;}
+  #ofertas_home .oferta_tres img {width:100%;}
+  #ofertas_home h2 {font-family: 'montserrat'; position: absolute; top:0; left:0; color:#fff; font-size: 1.6vw; top:2vw; left:3vw;}
+  #ofertas_home h3 {font-family: 'montserrat'; position: absolute; top:0; left:0; color:#fff; font-size: 2.2vw; top:4vw; left:3vw; width:16vw;}
+  #ofertas_home .oferta_uno h2 {top:3vw; left:3vw;}
+  #ofertas_home .oferta_uno h3 {top:5.5vw; left:3vw; width:10vw; font-size: 2.6vw;}
+  #ofertas_home .oferta_tres h3 {width:20vw;}
+
+@media (max-width:600px)
+{
+  #ofertas_home {width:90vw; margin: 20vw auto 7vw auto;}
+  #ofertas_home .oferta_uno {float: none; width: 90vw; left:auto; margin: 10vw auto;}
+  #ofertas_home .oferta_dos {float: none; width: 90vw; left:auto; margin: 10vw auto;}
+  #ofertas_home .oferta_tres {float: none; width: 90vw; left:auto; margin: 10vw auto;}
+  #ofertas_home .oferta_uno img {width:100%;}
+  #ofertas_home .oferta_dos img {width:100%;}
+  #ofertas_home .oferta_tres img {width:100%;}
+  #ofertas_home h2 {font-size: 3.5vw; top:4vw; left:3vw;}
+  #ofertas_home h3 {font-size: 5vw; top:10vw; left:5vw; width:50vw;}
+  #ofertas_home .oferta_uno h2 {top:4vw; left:3vw;}
+  #ofertas_home .oferta_uno h3 {top:14vw; left:5vw; width:10vw; font-size: 5vw;}
+  #ofertas_home .oferta_tres h3 {width:50vw;}
+}
+/* FIN OFERTAS HOME */
+
+
+/* RESERVACION HOME */
+  #reservacion_home {text-align: center; position: relative; margin: 0 0 10vw 0;}
+  #reservacion_home h2 {padding: 0vw 0 3vw 0;}
+  #reservacion_home form {width:60vw; margin: 0 auto 0 auto;}
+  #reservacion_home form input {outline-color:  #ffe001; margin: 1vw; width:23vw; border: 1px solid #999; font-family: 'montserrat regular'; color:#666; padding: 1.4vw; font-size: 1.2vw; border-radius: 0.4vw; }
+  #reservacion_home form input::placeholder {font-family: 'montserrat regular'; color:#999;}
+  #reservacion_home form button {outline: none; margin: 1vw; background-color: #ffe001; border: 1px solid #ffe001; font-family: 'montserrat'; width: 26vw; border-radius: 0.4vw; font-size: 1.2vw; padding: 1.4vw; transition: 0.5s ease-in-out; cursor: pointer;}
+  #reservacion_home form button:hover {background-color: #000; border: 1px solid #000; color: #ffe001;}
+
+@media (max-width:600px)
+{
+  #reservacion_home {text-align: center; position: relative; margin: 0 0 10vw 0;}
+  #reservacion_home h2 {padding: 5vw 0 7vw 0;}
+  #reservacion_home form {width:90vw; margin: 0 auto 0 auto;}
+  #reservacion_home form input {margin: 4vw auto; width:100%; border: 1px solid #999; font-family: 'montserrat regular'; color:#666; padding: 4vw 0 4vw 0vw; text-indent: 4vw; font-size: 5vw; border-radius: 1vw; }
+  #reservacion_home form input::placeholder {font-family: 'montserrat regular'; color:#999;}
+  #reservacion_home form button {margin: 4vw auto; width: 90vw; border-radius: 1vw; font-size: 5vw; padding: 4vw;}
+}
+/* FIN RESERVACION HOME */
+
+
+/* MAIN FOOTER */
+  #main_footer {background-image: url('../sources/img/fondo_footer.jpg'); position: relative; background-repeat: no-repeat; background-size: 100%; width:100vw;  height:39vw;}
+  #main_footer p {font-size: 1vw;}
+  #main_footer .logo {position: absolute; top:6vw; left:8vw; width:20vw;}
+  #main_footer .logo img {width:100%;}
+  #main_footer .texto {color:#ccc; position: absolute; top: 16vw; left:9vw; width:34vw; font-size: 1vw; line-height: 1.6vw;}
+  #main_footer .copy {color:#ccc; position: absolute; bottom:5vw; left:9vw; width:34vw; font-size: 1vw;}
+  #main_footer .datos {position: absolute; top:16vw; left:60vw;}
+  #main_footer .datos span {margin: 0.8vw 0 0 0; display:block;}
+  #main_footer .datos span p {color:#ccc; float: left; font-size: 1vw; padding: 0.4vw 0 0 1vw;}
+  #main_footer .datos span i {float: left;}
+  #main_footer .datos span i svg {width:2vw}
+  #main_footer .datos span i svg path {fill:#ffe001;}
+  #main_footer .redes {position: absolute; bottom:5vw; right:7vw;}
+  #main_footer .redes i {margin: 0.3vw; cursor: pointer;}
+  #main_footer .redes i svg {width:2.2vw;}
+  #main_footer .redes i svg path {fill:#ccc; transition: 0.5s ease-in-out;}
+  #main_footer .redes i:hover > svg path {fill:#ffe001;}
+
+@media (max-width:600px)
+{
+  #main_footer { background-size: cover; background-position: right; width:100vw;  height:auto; padding: 20vw 0;}
+  #main_footer p {font-size: 2.6vw; position: relative;}
+  #main_footer .logo {position: relative; margin: auto; top:auto; left:auto; width:40vw;}
+  #main_footer .logo img {width:100%;}
+  #main_footer .texto { position: relative; top: auto; left:auto; width:70vw; font-size: 2.6vw; margin:10vw auto; text-align: center; line-height: 4.4vw;}
+  #main_footer .copy {color:#ccc; position: relative; bottom:auto; left:auto; text-align: center; margin: 10vw auto 10vw auto; width:70vw; font-size: 2.6vw;}
+  #main_footer .datos {position: relative; top:auto; left:auto; margin: 0 0 10vw 10vw;}
+  #main_footer .datos span {margin: 3vw 0 0 0vw; width: 100vw; position: relative; display:block; text-align: center;}
+  #main_footer .datos span p {color:#ccc; float: left; font-size: 3vw; padding: 1vw 0 0 4vw;}
+  #main_footer .datos span i {float: left;}
+  #main_footer .datos span i svg {width:6vw}
+  #main_footer .datos span i svg path {fill:#ffe001;}
+  #main_footer .redes {position: relative; bottom:auto; right:auto; text-align: center;}
+  #main_footer .redes i {margin: 3vw; cursor: pointer;}
+  #main_footer .redes i svg {width:8vw;}
+  #main_footer .redes i svg path {fill:#ccc; transition: 0.5s ease-in-out;}
+  #main_footer .redes i:hover > svg path {fill:#ffe001;}
+}
+/* FINMAIN FOOTER */

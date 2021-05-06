@@ -1,0 +1,40 @@
+/* MENU USER */
+
+  .ua1_btn_muestra {position: absolute; top:2vw; right:2vw; cursor: pointer; z-index: 999999990;}
+  .ua1_btn_muestra svg {width:2vw;}
+  .ua1_btn_muestra svg path {fill:orange; transition: 0.5s ease-in-out;}
+  .ua1_btn_muestra:hover > svg path {fill:gray;}
+
+
+  #ua1_user_area {position: fixed;  z-index: 999999995;  display:none; top:0; margin: 0; padding: 0px 0 0 0; right: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,.4);}
+  #ua1_user_area .menu {position: fixed; margin: 0; z-index: 999999995; padding: 0; right: 0; height: 100vh; width: 0; background-color:#fff;}
+  #ua1_user_area .contenedor {position: fixed; overflow-x: hidden; overflow-y: auto;  margin: 0; z-index: 999999995; padding: 0 0 10vw 0; left: 0; height: 100vh; width: 0; background-color:#fff;}
+
+  #ua1_user_menu .container_datos_user_post { border-bottom: 1px solid #ccc; padding-top: 2vw; padding-bottom: 1vw;  width: 240px; margin: auto;}
+  #ua1_user_menu .img_user_1 {padding: 0px 0 0 1vw;}
+  #ua1_user_menu .datos_user_post { padding: 1vw 0 0 1vw; margin-top:0vw; }
+  #ua1_user_menu .datos_user_post a {text-decoration: none;}
+  #ua1_user_menu .datos_user_post h2 {font-size: 2vw; font-weight: bold; display: inline-block; padding: 0; position: static;text-align: left;}
+  #ua1_user_menu .datos_user_post h3 {font-size: 16px; display: inline-block;}
+  #ua1_user_menu .datos_user_post span {display: inline-block;}
+  #ua1_user_menu .container_img_user_1 {width: 80px; height: 80px; border-radius: 100px; overflow: hidden;}
+  #ua1_user_menu .container_img_user_1 img {height: 100%; margin-left: 0px;}
+  #ua1_user_menu .tipoUsuario {position: absolute; top: 5.4vw; left: 140px;}
+  #ua1_user_menu .boton_cerrar_user_menu {float: right; padding: 20px; color:#666; z-index: 99999999; font-size: 18px; cursor:pointer; font-weight: bold;}
+
+  #ua1_user_menu ul {border-bottom: 1px solid #ccc; padding-bottom: 1vw; width: 240px; margin: auto; padding: 0vw 0 2vw 0;}
+  #ua1_user_menu li {font-family: 'raleway'; color:#666;  list-style: none;  vertical-align: middle; clear:both; font-weight: bold; padding: 1vw 0 1vw 2vw; cursor: pointer;}
+  #ua1_user_menu li:hover > span {color:#999;}
+  #ua1_user_menu li span {float: left;}
+  #ua1_user_menu li span:first-child {transition: .5s ease-in-out; font-size:24px; position: absolute;}
+  #ua1_user_menu li span:last-child {transition: .5s ease-in-out; margin: 2px 0 0 40px;}
+
+  #ua1_user_area .page {}
+  #ua1_user_area .page h2 {font-size: 2vw; font-family: 'raleway'; text-align: left; padding: 2vw 0 0 4vw;}
+
+
+  @media (max-width:500px)
+  {
+    #ua1_user_menu .container_datos_user_post { border-bottom: 1px solid #ccc; padding-top: 10px; padding-bottom: 1vw; width: 240px; margin: auto;}
+  }
+/* FIN MENU USER */

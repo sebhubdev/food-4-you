@@ -1,0 +1,10 @@
+
+
+RewriteEngine On
+
+
+
+RewriteRule ^([a-zA-Z0-9-]*)/?$ index.php?pag=$0
+
+RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/?$ index.php?pag=$1&id=$2&tit=$3
+RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/?$ index.php?pag=$1&id=$2&tit=$3&prod_id=$4&prod_tit=$5
