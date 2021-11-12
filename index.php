@@ -2,7 +2,7 @@
   session_start();
   include('config/config.php');
   extract($_POST);
-  if(!$_GET[pag]){$pag="home";}else{$pag=trim($_GET[pag],'/');}
+  if(!$_GET['pag']){$pag="home";}else{$pag=trim($_GET['pag'],'/');}
 ?>
 
 <!DOCTYPE html>
